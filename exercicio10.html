@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company name</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      body {
+        margin: 0;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e3cdcd;
+        height: 60px;
+        padding-inline: 50px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo .circle-logo {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        margin-right: 5px;
+      }
+      .logo h4 {
+        margin: 0px;
+        font: 500 16px/24px "Roboto", sans-serif;
+      }
+
+      .menu {
+        box-sizing: border-box;
+      }
+
+      .menu-button {
+        height: 60%;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 8px;
+        border-radius: 4px;
+      }
+      .menu-button:active {
+        border: 1px solid rgb(36, 36, 36);
+      }
+      .menu-button:hover {
+        border: 1px solid rgb(36, 36, 36);
+      }
+      main {
+        padding-inline: 50px;
+      }
+
+      main h4 {
+        font-size: 18px;
+        margin-top: 40px;
+      }
+      main p {
+        margin-bottom: 10px;
+      }
+
+      .user-form-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: column;
+      }
+      .user-form-container div {
+        display: flex;
+        align-items: center;
+        padding: 6px;
+      }
+      .user-form-container div label {
+        font-weight: bold;
+        font-size: 12px;
+        width: 30%;
+      }
+      .user-form-container div input {
+        width: 70%;
+        padding: 8px 0px;
+        border: 1px solid rgb(136, 136, 136);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="circle-logo">
+          <img src="logo bolinha.png" alt="Imagem de uma arvore como logo" />
+        </div>
+        <h4>Company Name</h4>
+      </div>
+      <div class="menu">
+        <button class="menu-button">Pricing</button>
+        <button class="menu-button">Support</button>
+        <button class="menu-button">Get Started</button>
+      </div>
+    </header>
+    <main>
+      <h4>Workshop registration</h4>
+      <p>Register now while seats are available</p>
+
+      <form action="POST">
+        <fieldset class="user-form-container">
+          <div>
+            <label for="firstname">First name</label>
+            <input type="text" name="firstname" id="firstname" />
+          </div>
+          <div>
+            <label for="lastname">Last name</label>
+            <input type="text" name="lastname" id="lastname" />
+          </div>
+          <div>
+            <label for="company">Company</label>
+            <input type="text" name="company" id="company" />
+          </div>
+          <div>
+            <label for="email">Email address</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div>
+            <label for="phone">Phone number</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+        </fieldset>
+        <fieldset class="user-form-container" style="margin-top: 20px">
+          <div>
+            <label for="shirtSize">T-shit size</label>
+            <input type="text" name="shirtSize" id="shirtSize" />
+          </div>
+          <div>
+            <label for="meal">Meal preference</label>
+            <input type="text" name="meal" id="meal" />
+          </div>
+          <div></div>
+          <div>
+            <label for="arrivalDate">Arrival date</label>
+            <input type="datetime" name="arrivalDate" id="arrivalDate" />
+          </div>
+          <div>
+            <label for="departureDate">Departure date</label>
+            <input type="datetime" name="departureDate" id="departureDate" />
+          </div>
+          <div>
+            <label for="hotel">Hotel</label>
+            <input type="datetime" name="hotel" id="hotel" />
+          </div>
+        </fieldset>
+        <fieldset class="user-form-container" style="margin-top: 20px">
+          <div>
+            <label for="address1">Home address</label>
+            <input type="text" name="address1" id="address1" />
+          </div>
+          <div>
+            <label for="address2">Home address 2</label>
+            <input type="text" name="address2" id="address2" />
+          </div>
+          <div>
+            <label for="city">City</label>
+            <input type="datetime" name="city" id="city" />
+          </div>
+          <div>
+            <label for="state">State</label>
+            <input type="datetime" name="state" id="state" />
+          </div>
+          <div>
+            <label for="zipcode">Zip Code</label>
+            <input type="datetime" name="zipcode" id="zipcode" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
